@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Md.Afridi Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Georgia, serif;
+        }
+
+        .profile-card {
+            width: 700px;
+            background: white;
+            padding: 20px 35px 35px;
+            border-radius: 45px;
+            text-align: center;
+
+            box-shadow:
+                -15px 10px 35px #8b65ff,
+                15px 10px 35px #ff9d38;
+        }
+
+        /* Profile Image */
+        .avatar {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: #b9d5ff;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 2px solid #a8c8ff;
+            box-shadow: 0 5px 25px #b5caff;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 52px;
+            font-variant: small-caps;
+            letter-spacing: 4px;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .purple-line {
+            height: 8px;
+            background: #8844ee;
+            margin-bottom: 20px;
+        }
+
+        /* Quote */
+        .quote {
+            font-size: 34px;
+            font-style: italic;
+            line-height: 1.4;
+            margin-bottom: 22px;
+        }
+
+        /* Horizontal Line */
+        hr {
+            border: none;
+            height: 2px;
+            background: #aaa5bd;
+            margin-bottom: 15px;
+        }
+
+        /* Skills */
+        h2 {
+            font-size: 38px;
+            letter-spacing: 7px;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            font-size: 27px;
+            word-spacing: 10px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 750px) {
+            .profile-card {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .quote {
+                font-size: 23px;
+            }
+
+            .skills {
+                font-size: 19px;
+            }
+
+            .avatar {
+                width: 160px;
+                height: 160px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="avatar">
+            <img src="pdf.svg" alt="Profile Picture">
+        </div>
+
+        <h1>Md.Afridi</h1>
+
+        <div class="purple-line"></div>
+
+        <p class="quote">
+            Dream big, learn continuously,<br>
+            and build a better tomorrow.
+        </p>
+
+        <hr>
+
+        <h2>Skills:</h2>
+
+        <p class="skills">
+            Python &bull;  HTML &bull;  CSS &bull;  Web Development
+        </p>
+
+    </div>
+
+</body>
+</html>
